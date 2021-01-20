@@ -6,18 +6,19 @@ export const fetchData = async() => {
     try {
         const { 
             data : {  
-                Global : { NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered },
+                Global : { 
+                  NewConfirmed: newConfirmed,
+                  NewDeaths: newDeaths , 
+                  NewRecovered: newRecovered ,
+                  TotalConfirmed: totalConfirmed,
+                  TotalDeaths: totalDeaths , 
+                  TotalRecovered: totalRecovered  },
                 Date: lastUpdate,
             }
         } = await axios.get(url)
 
         return {
-            NewConfirmed,
-            NewDeaths,
-            NewRecovered,
-            TotalConfirmed,
-            TotalDeaths,
-            TotalRecovered,
+            newConfirmed, newDeaths, newRecovered, totalConfirmed, totalDeaths, totalRecovered,
             lastUpdate
         }
     } catch (error) {}
