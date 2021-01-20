@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Covid19 tracker app
 
 User can check the newest update of new infected cases, recovered as well as deaths cause by Covid-19 globally daily. In addition, user can also check the infected, recovery, and deaths chart of a specific country since its first case
 
